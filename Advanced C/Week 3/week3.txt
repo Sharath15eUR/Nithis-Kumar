@@ -1,0 +1,59 @@
+1. Which signals are triggered, when the following actions are performed.
+ 
+user press ctrl+C 
+-SIGINT(short interrupt) is triggered
+
+kill() system call is invoked  
+-SIGTERM or SIGKILL is triggered
+
+CPU tried to execute an illegal instruction
+-SIGILL is triggred
+
+When the program access the unassigned memory
+-SIGSEGV (segmentation fault)
+
+
+
+2.List the gdb command for the following operations  
+
+To run the current executable file
+-run or r
+
+To create breakpoints at
+-break or b
+
+To resume execution once after breakpoint
+- enable
+
+To clear break point created for a function
+-clear
+
+Print the parameters of the function in the backtrace
+-print or p
+
+
+
+3. Guess the output for the following program.
+
+2 2 2 2 2 2 2 
+
+
+4. Guess the output for the following program.
+3 4 2 4 1 4 1 4
+
+6. How to avoid Race conditions and deadlocks? 
+
+By using mutex, race conditions and deadlocks can be avoided, ie, by locking one of the process while other process using the resource.
+
+7. What is the difference between exec and fork ?
+
+In fork(), new process are created ,these process are called child process and both parent and child process execute simultaneously.
+
+In exec(), the process overlay the existing process ans return to the original process untill an error occurs to the newly created process
+
+8. What is the difference between process and threads. 
+
+Process is an execution state in the cpu whereas a thread can be a segment of the cpu. 
+
+
+
